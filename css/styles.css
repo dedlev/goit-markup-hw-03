@@ -18,6 +18,15 @@ body {
   color: var(--primary-text-color);
 }
 
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -33,7 +42,11 @@ body {
 }
 
 .list {
+  margin-top: 0;
+  margin-bottom: 0;
+
   list-style: none;
+  padding-left: 0;
 }
 
 .link {
@@ -84,7 +97,7 @@ body {
   color: var(--accent-color);
 }
 
-.address .link {
+.info-nav .link {
   font-size: 14px;
   font-weight: 500;
 
@@ -92,14 +105,15 @@ body {
   letter-spacing: 0.28px;
 }
 
-.address .link:hover,
-.address .link:focus {
+.info-nav .link:hover,
+.info-nav .link:focus {
   color: var(--accent-color);
 }
 
 /* секція герой */
 
 .hero {
+  padding-bottom: 94px;
   text-align: center;
 
   color: var(--primary-white-color);
@@ -107,6 +121,8 @@ body {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 44px;
   font-weight: 900;
 
@@ -117,12 +133,15 @@ body {
 }
 
 .hero-btn {
+  padding: 10px 32px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
 
   line-height: 1.87;
   letter-spacing: 0.96px;
+  border: 0;
+  border-radius: 4px;
 
   cursor: pointer;
 
@@ -138,7 +157,13 @@ body {
 
 /* секція переваги*/
 
+.section {
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -150,6 +175,8 @@ body {
 }
 
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
 
   line-height: 1.2;
@@ -160,13 +187,25 @@ body {
   color: var(--title-text-color);
 }
 
+.advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* команда */
 
 .team {
   background-color: #f5f4fa;
 }
+.team-member {
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-white-color);
+}
 
 .team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -178,6 +217,9 @@ body {
 }
 
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
 
@@ -203,6 +245,16 @@ body {
 
 .footer-address {
   font-style: normal;
+}
+
+.address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.footer-info {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .footer .link {
